@@ -14,11 +14,19 @@ public class VerifyUrl {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver ();
 		
+		
 //		Window maximized command
 		driver.manage().window().maximize();
 		
 //		Get URL command
 		driver.get("https://www.saucedemo.com/");
+		
+		
+		
+//		=========================
+//		Title Verify Process
+//		=========================
+		
 		
 //		Actual Title
 		String actualTitle = driver.getTitle();
@@ -28,9 +36,9 @@ public class VerifyUrl {
 		
 //		Condition Use process
 		if(actualTitle.equals(expectedTitle)) {
-			System.out.println("Title Matched URL Valid");
+			System.out.println("Title Matched");
 		} else {
-			System.out.println("Title didn't Matched URL Invalid");
+			System.out.println("Title didn't Matched");
 		}
 		
 //		When you don't like condition then you can apply Assertion way
@@ -39,7 +47,39 @@ public class VerifyUrl {
 		
 		
 //		Actual Title print
-		System.out.println(actualTitle);
+		System.out.println("Actual Title is: "+actualTitle);
+//		Expected Title print
+		System.out.println("Expected Title is: "+expectedTitle);
+		
+		
+		
+//		=========================
+//		URL Verify Process
+//		=========================
+		
+		
+//		Actual URL
+		String ActualURL = driver.getCurrentUrl();
+		
+//		Expected URL
+		String ExpectedURL = "https://www.saucedemo.com/";
+		
+		
+//		Condition Use process
+//		if(ActualURL.equals(ExpectedURL)) {
+//			System.out.println("URL Valid");
+//		} else {
+//			System.out.println("URL Invalid");
+//		}
+		
+//		When you don't like condition then you can apply Assertion way
+//		Assert.assertEquals( ActualURL, ExpectedURL, "Condition true");
+		
+		
+//		Actual URL print
+		System.out.println("Actual URL is: "+ActualURL);
+//		Expected URL print
+		System.out.println("Expected URL is: "+ExpectedURL);
 		
 		
 //		Browser window time command
