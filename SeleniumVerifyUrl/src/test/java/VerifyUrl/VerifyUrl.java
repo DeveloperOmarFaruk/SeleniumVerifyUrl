@@ -41,7 +41,7 @@ public class VerifyUrl {
 			System.out.println("Title didn't Matched");
 		}
 		
-//		When you don't like condition then you can apply Assertion way
+//		When you don't like the condition then you can apply Assertion way
 		
 //		Assert.assertEquals("Condition true", actualTitle, expectedTitle);
 		
@@ -66,13 +66,13 @@ public class VerifyUrl {
 		
 		
 //		Condition Use process
-//		if(ActualURL.equals(ExpectedURL)) {
-//			System.out.println("URL Valid");
-//		} else {
-//			System.out.println("URL Invalid");
-//		}
+		if(ActualURL.equals(ExpectedURL)) {
+			System.out.println("URL Valid");
+		} else {
+			System.out.println("URL Invalid");
+		}
 		
-//		When you don't like condition then you can apply Assertion way
+//		When you don't like the condition then you can apply Assertion way
 //		Assert.assertEquals( ActualURL, ExpectedURL, "Condition true");
 		
 		
